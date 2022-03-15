@@ -1,0 +1,45 @@
+
+<!--div class="container">
+  <div class="row">
+
+    <div class="col-4" *ngFor="let vino of this.vinos">
+
+      <div>
+        <img class="img-fluid" src="/assets/img/{{vino.imagen}}" alt="Card image cap">
+        <h5 class="card-title">{{vino.nombre}}</h5>
+        <p class="card-text">{{vino.descripcion.substring(0,70)}}</p>
+        <p>{{vino.precio| currency: 'EUR'}}</p>
+        <button type="button" class="btn btn-outline-primary" (click)="verVino(vino.id)" >
+          Ver mas ...
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div-->
+<div class="container">
+  <div class="row">
+    <h1>Vinos</h1>
+    <div class="col-4" *ngFor="let vino of this.vinos">
+      <figure class="card card-product-grid">
+        <figcaption class="info-wrap">
+          <div>
+            <img class="img-fluid" src="/assets/img/{{vino.imagen}}" alt="Card image cap">
+            <h5 class="card-title">{{vino.nombre}}</h5>
+            <p class="card-text">{{vino.descripcion.substring(0,70)}}</p>
+            <p class="text-success">{{vino.precio| currency: 'EUR'}}</p>
+            <button type="button" class="btn btn-outline-primary" (click)="verVino(vino.id)" >
+              Ver mas ...
+            </button>
+          </div>
+        </figcaption>
+
+      </figure>
+    </div>
+
+
+  </div>
+</div>
+
+

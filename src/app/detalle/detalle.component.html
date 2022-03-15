@@ -1,0 +1,45 @@
+
+
+<div class="container mt-5 mb-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10">
+      <div class="card">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="images p-3">
+              <img class="img-fluid" src="/assets/img/{{vino.imagen}}" alt="Card image cap">
+               </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="product p-4">
+
+              <div class="mt-4 mb-3">
+                <h5 class="text-uppercase">{{vino.nombre}} ( {{vino.precio| currency: 'EUR'}} )</h5>
+
+              </div>
+              <p class="about">{{vino.descripcion}}</p>
+
+              <p class="card-text"><b>Uva:</b> {{vino.uvas}}</p>
+              <p class="card-text"><b>Pais:</b> {{vino.pais}}</p>
+              <p class="card-text"><b>Año:</b> {{vino.anyo}}</p>
+              <p class="card-text"><b>Region:</b> {{vino.region}}</p>
+
+              <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4" routerLink="/vinos">Volver</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
